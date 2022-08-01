@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Candidato1Counter from "./component/candidatos/candidato1.jsx";
+import Candidato2Counter from "./component/candidatos/candidato2.jsx";
+import Candidato3Counter from "./component/candidatos/candidato3.jsx";
+import Candidato4Counter from "./component/candidatos/candidato4.jsx";
+import TotalVotos from "./component/totalVotos";
+import VotosIndividuales from "./component/votosIndividuales/";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Candidato1Counter />
+			<Candidato2Counter />
+			<Candidato3Counter />
+			<Candidato4Counter />
+			<TotalVotos />
+			<VotosIndividuales />
+		</div>
+	);
 }
 
 export default App;
